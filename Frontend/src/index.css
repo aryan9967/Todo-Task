@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+body {
+  background-color: rgb(41, 41, 41);
+}
+
+button {
+  border: none;
+  outline: none;
+  border-radius: 18px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.main_page {
+  width: 60vw;
+  margin: auto;
+}
+
+.heading {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.new_task_form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  background-color: rgb(60, 60, 60);
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.input_field {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.input_heading {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.act_input input {
+  width: 200px;
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+}
+
+.right button {
+  background-color: rgb(243, 115, 24);
+  color: white;
+  padding: 7px 10px;
+}
+
+.task_container {
+  overflow: auto;
+}
+
+.task {
+  background-color: rgb(60, 60, 60);
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1px;
+  border-radius: 3px;
+}
+
+.task_left {
+  display: flex;
+  flex-direction: column;
+}
+
+.task_heading {
+  font-size: 22px;
+  color: rgb(243, 115, 24);
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.task_description {
+  font-size: 14px;
+}
+
+.task_right {
+  display: flex;
+}
+
+.task_right button {
+  margin-right: 7px;
+  padding: 8px 15px;
+  font-weight: bold;
+
+}
+
+.edit_btn {
+  color: blue;
+  border: 1px solid blue;
+}
+
+.complete_btn {
+  color: rgb(99, 210, 119);
+  border: 1px solid rgb(99, 210, 119);
+}
+
+.dlt_btn {
+  color: red;
+  border: 1px solid red;
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  left: 0;
+  background-color: rgba(13, 13, 13, 0.3);
+  display: flex;
+  align-items: center;
+}
+
+.update_form {
+  /* width: 400px; */
+  margin: auto;
+  padding: 20px;
+  background-color: rgb(50, 50, 50);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.form_line {
+  margin-bottom: 10px;
+}
+
+.form_line input {
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form_line label {
+  margin-right: 8px;
+}
+
+.btn_container {
+  margin-bottom: 10px;
+}
+
+.btn_container button {
+  background-color: rgb(243, 115, 24);
+  color: white;
+  padding: 7px 10px;
+}
