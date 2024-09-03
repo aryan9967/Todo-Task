@@ -12,13 +12,13 @@ export default function TaskPage() {
   }, []);
 
   async function getTodo() {
-    const { data } = await axios.get("http://localhost:3000/get-todo");
+    const { data } = await axios.get(`${import.meta.env.VITE_API_ENDPOINT}/get-todo`);
     console.log(data);
     setTodo(data);
   }
 
   async function addTodo() {
-    const { data } = await axios.post("http://localhost:3000/create-todo", {
+    const { data } = await axios.post(`${import.meta.env.VITE_API_ENDPOINT}/create-todo`, {
       name: name,
       description: desc,
     });
@@ -29,7 +29,7 @@ export default function TaskPage() {
   }
 
   async function deleteTodo(id) {
-    const { data } = await axios.post("http://localhost:3000/delete-todo", {
+    const { data } = await axios.post(`${import.meta.env.VITE_API_ENDPOINT}/delete-todo`, {
       _id: id,
     });
     console.log(data);
@@ -37,7 +37,7 @@ export default function TaskPage() {
   }
 
   async function completeTodo(id) {
-    const { data } = await axios.post("http://localhost:3000/complete-todo", {
+    const { data } = await axios.post(`${import.meta.env.VITE_API_ENDPOINT}/complete-todo`, {
       _id: id,
     });
     console.log(data);
@@ -45,7 +45,7 @@ export default function TaskPage() {
   }
 
   async function editTodo(id, name, description) {
-    const { data } = await axios.post("http://localhost:3000/update-todo", {
+    const { data } = await axios.post(`${import.meta.env.VITE_API_ENDPOINT}/update-todo`, {
       _id: id,
       name: name,
       description: description,
